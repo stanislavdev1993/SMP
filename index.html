@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управління розкладом занять</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Управління розкладом занять</h1>
+        <nav>
+            <a href="#" id="add-lesson-tab">Додати урок</a>
+            <a href="#" id="professors-tab">Список професорів</a>
+            <a href="#" id="classrooms-tab">Список аудиторій</a>
+            <a href="#" id="reports-tab">Звіт</a>
+        </nav>
+    </header>
+
+    
+    <main>
+        <!-- Секція "Додати урок" -->
+        <section id="add-lesson">
+            <h2>Додати урок</h2>
+            <form id="add-lesson-form">
+                <label for="course">Курс:</label>
+                <select id="course">
+                    <!-- Опції курсів будуть додані через TypeScript -->
+                </select>
+
+                <label for="professor">Професор:</label>
+                <select id="professor">
+                    <!-- Опції професорів будуть додані через TypeScript -->
+                </select>
+
+                <label for="classroom">Аудиторія:</label>
+                <select id="classroom">
+                    <!-- Опції аудиторій будуть додані через TypeScript -->
+                </select>
+
+                <label for="dayOfWeek">День тижня:</label>
+                <select id="dayOfWeek">
+                    <option value="Monday">Понеділок</option>
+                    <option value="Tuesday">Вівторок</option>
+                    <option value="Wednesday">Середа</option>
+                    <option value="Thursday">Четвер</option>
+                    <option value="Friday">П'ятниця</option>
+                </select>
+
+                <label for="timeSlot">Часовий слот:</label>
+                <select id="timeSlot">
+                    <option value="8:30-10:00">8:30-10:00</option>
+                    <option value="10:15-11:45">10:15-11:45</option>
+                    <option value="12:15-13:45">12:15-13:45</option>
+                    <option value="14:00-15:30">14:00-15:30</option>
+                    <option value="15:45-17:15">15:45-17:15</option>
+                </select>
+
+                <button type="submit">Додати урок</button>
+            </form>
+        </section>
+
+        <!-- Секція "Розклад занять" -->
+        <section id="schedule">
+            <h2>Розклад занять</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>День</th>
+                        <th>Час</th>
+                        <th>Курс</th>
+                        <th>Професор</th>
+                        <th>Аудиторія</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody id="schedule-body">
+                    <!-- Уроки будуть додані через TypeScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Секція "Список професорів" -->
+        <section id="professors">
+            <h2>Список професорів</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Ім'я</th>
+                        <th>Відділ</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody id="professors-body">
+                    <!-- Професори будуть додані через TypeScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Секція "Список аудиторій" -->
+        <section id="classrooms">
+            <h2>Список аудиторій</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Є проектор</th>
+                        <th>Вмістимість</th>
+                        <th>Дії</th>
+                    </tr>
+                </thead>
+                <tbody id="classrooms-body">
+                    <!-- Аудиторії будуть додані через TypeScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="dist/index.js"></script>
+</body>
+</html>
