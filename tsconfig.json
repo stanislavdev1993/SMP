@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "es2022",
+      "outDir": "./dist", // Specify the output directory
+      "esModuleInterop": true,
+      "allowJs": true,
+      "strict": true,
+      "lib": ["DOM", "ES2022"],
+      "noUncheckedIndexedAccess": true
+    },
+    "include": [
+      "src/**/*" // Include your TypeScript files
+    ]
+  }
+  
